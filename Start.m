@@ -12,11 +12,15 @@ t_sim = 1697; % Unit [s]
 %% Setting radiator geometry variables
 % Enter the geometry variables of the radiator you want to use
 
+D_h = 400 ; % Duct Height [mm]
+D_l = 200 ; % Duct Length [mm]
+F_d = 250 ; % Fan Diameter [mm]
+
 R_h = 352 ; % Radiator Core Height [mm]
 R_l = 302 ; % Radiator Core Length [mm]
 R_t = 32 ; % Radiator Core Thickness [mm]
 Fin_h = 4.85 ; % Fin height [mm]
 FPI = 16 ; % Fin per inch [/inch]
 
-save('Radi_parameter.mat', 'R_h', 'R_l', "R_t", "Fin_h", "FPI", '-mat');
+save('Radi_parameter.mat', '-v7.3', 'R_h', 'R_l', "R_t", "Fin_h", "FPI", '-mat');
 
