@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 %% 'Start.m' must be executed before starting the simulation. 
 % Here, we define the desired variables, which serve as the basis for the simulation.
 % I have included an example at the beginning. You can modify it as needed in the future
@@ -23,4 +24,23 @@ Fin_h = 4.85 ; % Fin height [mm]
 FPI = 16 ; % Fin per inch [/inch]
 
 save('Radi_parameter.mat', '-v7.3', 'R_h', 'R_l', "R_t", "Fin_h", "FPI", '-mat');
+=======
+%% 
+
+clear;
+
+t_sim = 1697;
+
+%% 
+
+R_h = 352 ; % [mm]
+R_l = 302 ; % [mm]
+R_t = 32 ; % [mm]
+Fin_h = 4.85 ; % [mm]
+FPI = 16 ; % [mm]
+
+Matrix_parameter = [R_h; R_l; R_t; Fin_h; FPI;];
+
+save('Radi_parameter.mat', 'Matrix_parameter', '');
+>>>>>>> Stashed changes
 
